@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('icon-pack.css');
+:root {
+    --primary-color: #5A9A09;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+* {
+    
+}
+
+label, p {
+    margin: 0px;
+    font-weight: normal;
+}
+@media(max-width:768px){
+    p{
+        font-size: 14px;
+    }
+}
+
+button, input, select, textarea {
+    background: 0px 0px;
+    border: none;
+    outline: 0px;
+    border-radius: 0px;
+    appearance: none;
+    box-shadow: none;
+    padding: 0px;
+}
+
+textarea {
+    vertical-align: middle;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+dl, ol, ul {
+    margin-bottom: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.htmlFixed {
+    overflow: hidden;
+}
+
+a, a:active, a:focus, a:hover, a:link, a:visited {
+    text-decoration: none;
+    outline: 0px;
+}
+
+.gap30{
+    row-gap: 30px;
+}
+
+@media(min-width:1400px){
+    .container {
+        width: 1200px;
+    }
+}
+
+@media(max-width:768px){
+    .gap30{
+        row-gap: 15px;
+    }
+}
+
+.logo_title {
+    color: #5A9A09;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-left: 12px;
+}
+
+@media(max-width:1200px){
+    .logo_title {
+        color: #5A9A09;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 5px;
+    }
+}
+
+@media(max-width:768px){
+    .logo_title {
+        color: #5A9A09;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 5px;
+    }
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    flex: 1 0 0;
+}
+
+.detail .title {
+    color: #000;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.detail img {
+    width: 100%;
+    height: 453px;
+    align-self: stretch;
+}
+
+.detail .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.price > .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.price > .info > .first {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.price > .info > .first p {
+    color: #5A9A09;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.price > .info > p {
+    color: #525252;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.price > .raise-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    background: rgba(217, 217, 217, 0.50);
+}
+
+.price > .raise-bar .percent {
+    width: 40%;
+    height: 8px;
+    background: #5A9A09;
+}
+
+.detail .description {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 131.25% */
+}
+
+.detail div > .description {
+    margin-bottom: 12px;
+}
+
+.detail > .images {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.detail > .images img {
+    height: 178px;
+    flex: 1 0 0;
+    align-self: stretch;
+    margin-bottom: 24px;
+}
+
+.detail-donate-item {
+    display: flex;
+    padding: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border: 1px solid #D9D9D9;
+    background: rgba(217, 217, 217, 0.20);
+}
+
+.detail-donate-item .top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.detail-donate-item .top .title {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.detail-donate-item .top .description {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.detail-donate-item .top img {
+    width: 100%;
+}
+
+.detail-donate-item .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.relates {
+    margin-top: 48px;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border: 1px solid #D9D9D9;
+    background: rgba(217, 217, 217, 0.20);
+}
+
+.relates > .item {
+    display: flex;
+    height: 124px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.relates > .item > img {
+    width: 50%;
+    height: 124px;
+}
+
+.relates > .item > p {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.events {
+    margin-top: 48px;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border: 1px solid #D9D9D9;
+}
+
+.events > .title {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: center;
+}
+
+.events > .devider {
+    width: 100%;
+    height: 1px;
+    background: #D9D9D9;
+}
+
+.events > .item {
+    display: flex;
+    width: 100%;
+    padding-bottom: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.events > .item > .title {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.donate-top {
+    align-items: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    margin-bottom: -75px;
+    margin-top: 48px;
+}
+
+.donate-top > .title {
+    color: #5A9A09;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.donate-top > .description {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

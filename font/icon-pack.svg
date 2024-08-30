@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<defs>
+<font id="icon-pack" horiz-adv-x="1000" >
+<font-face font-family="icon-pack" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="x" unicode="&#xe800;" d="M593 427l396-577h-291l-267 389-334-389h-86l382 444-382 556h291l252-367 317 367h86l-364-423z m-118-138l263-377h133l-323 462-39 56-248 355h-133l308-440 39-56z" horiz-adv-x="1000" />
+
+<glyph glyph-name="menu" unicode="&#xe801;" d="M250 650c0 28 22 50 50 50h650c28 0 50-22 50-50s-22-50-50-50h-650c-28 0-50 22-50 50z m700-250h-900c-28 0-50-22-50-50 0-28 22-50 50-50h900c28 0 50 22 50 50 0 28-22 50-50 50z m0-300h-450c-28 0-50-22-50-50 0-28 22-50 50-50h450c28 0 50 22 50 50 0 28-22 50-50 50z" horiz-adv-x="1000" />
+
+<glyph glyph-name="left" unicode="&#xf177;" d="M1000 404v-108q0-7-5-12t-13-5h-696v-125q0-12-11-17t-19 3l-215 196q-5 5-5 12 0 8 5 14l215 197q9 8 19 4 11-5 11-17v-125h696q8 0 13-5t5-12z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
