@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('icon-pack.css');
 :root {
-    --primary-color: #011B56;
+    --blueColor: #142377;
+    --redColor: #B70303;
 }
 
 html {
@@ -171,10 +172,10 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
     .hm_inner > ul{
         display: flex !important;
     }
-    .hm_inner > ul > li.dropdown1 ul li a:hover{
-        background-color: #5A9A091A;
+    .hm_inner > ul > li ul li a:hover{
+        background: #5A9A091A;
     }
-    .hm_inner > ul > li.dropdown1:hover ul{
+    .hm_inner > ul > li:hover ul{
         opacity: 1;
         visibility: visible;
     }
@@ -198,10 +199,10 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
     .hm_inner > ul > li a{
         transition: all .3s;
     }
-    .hm_inner > ul > li:hover a{
+    .hm_inner > ul > li:hover > a{
         color: #5A9A09;
     }
-    .hm_inner > ul > li.dropdown1 ul{
+    .hm_inner > ul > li ul{
         display: block !important;
     }
     .src_button.active{
@@ -345,12 +346,15 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
     color: #8FFF00;
     position: relative;
 }
-.hm_inner > ul > li.dropdown1 > a::after{
+.hm_inner > ul > li > a.has-submenu::after{
     content: '\f107';
     font-family: 'FontAwesome';
     margin-left: 7px;
 }
-.hm_inner > ul > li.dropdown1 ul{
+.has-submenu + i {
+    display: none;
+}
+.hm_inner > ul > li ul{
     position: absolute;
     left: 0;
     top: 100%;
@@ -362,14 +366,14 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
     opacity: 0;
     background: #fff;
 }
-.hm_inner > ul > li.dropdown1 ul li a{
+.hm_inner > ul > li ul li a{
     display: flex;
     font-weight: 500;
     color: #000;
     padding: 8px;
     font-size: 13px;
 }
-.hm_inner > ul > li.dropdown1 ul li a{
+.hm_inner > ul > li ul li a{
     white-space: nowrap;
 }
 
@@ -386,12 +390,12 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
     color: #5A9A09;
     position: relative;
 }
-.events > ul > li.dropdown1 > a::after{
+.events > ul > li > a::after{
     content: '\f107';
     font-family: 'FontAwesome';
     margin-left: 7px;
 }
-.events > ul > li.dropdown1 ul{
+.events > ul > li ul{
     position: absolute;
     left: 0;
     top: 100%;
@@ -403,14 +407,14 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
     opacity: 0;
     background: #fff;
 }
-.events > ul > li.dropdown1 ul li a{
+.events > ul > li ul li a{
     display: flex;
     font-weight: 500;
     color: #000;
     padding: 8px;
     font-size: 13px;
 }
-.events > ul > li.dropdown1 ul li a{
+.events > ul > li ul li a{
     white-space: nowrap;
 }
 
@@ -556,7 +560,7 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
         border: none;
         padding-left: 15px;
     }
-    .hm_inner > ul > li.dropdown1 ul{
+    .hm_inner > ul > li ul{
         position: static;
         visibility: visible;
         opacity: 1;
@@ -567,7 +571,7 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
         transition: none;
         background: transparent;
     }
-    .hm_inner > ul > li.dropdown1 ul li a{
+    .hm_inner > ul > li ul li a{
         color: #fff;
     }
     .menu_trigger{
@@ -715,6 +719,13 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
     transform: translate(-50%, -50%);
     text-align: center;
     margin-top: 0px;
+    z-index: 2
+}
+.mainSwiper .swiper-slide::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(20, 35, 119, 0.75); */
 }
 .mainSwiper .swiper-slide .container > div{
     padding: 0 100px;
@@ -840,6 +851,7 @@ a, a:active, a:focus, a:hover, a:link, a:visited {
     }
     .mainSwiper img{
         height: 450px;
+        min-height: auto;
     }
     .mainSwiper .swiper-slide .container{
         margin-top: -10px;
